@@ -5,15 +5,15 @@ import os.path
 
 # my entire playlist archive, exported from
 # http://www.spotmybackup.com/
-ARTIST_CACHE="artist_cache.txt"
+ARTIST_CACHE="data/artist_cache.txt"
 
 def make_artist_cache(): 
-    spotify_f = open("spotify_2016_10_31.json");
+    spotify_f = open("data/spotify_2016_10_31.json");
     
     # open the playlist as json
     playlists = json.load(spotify_f)
     
-    artist_f = open("artists_cache.txt", "w")
+    artist_f = open("data/artists_cache.txt", "w")
     
     # Now, these playlists only have track IDs in them 
     # then list the bands in the playlist
@@ -24,8 +24,3 @@ def make_artist_cache():
 
 if not os.path.isfile(ARTIST_CACHE):
     make_artist_cache()
-
-        # and then find those bands in the schedule
-
-# and export them
-
