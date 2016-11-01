@@ -1,0 +1,24 @@
+1. Pick bands in spotify.
+2. Export your spotify account at http://www.spotmybackup.com
+3. This will give you a json file, rename that and stick in data/spotify.json
+
+Then, run ./run_me.sh.
+
+Follow the instructions!
+Edit schedule.txt to make sense. the format NEEDS to be:
+
+^LDATE                  <== note the control-L on the date(!)
+VENUE
+xx:xx BAND
+xx:xx BAND
+   ... 
+xx:xx BAND
+
+VENUE
+xx:xx BAND
+xx:xx BAND
+   ... 
+xx:xx BAND
+
+Remove any extraneous text. Spot check it against the schedule so that
+the band names and times are right. PDFMiner isn't 100% perfet.

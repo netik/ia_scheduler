@@ -27,4 +27,5 @@ fi
 ./gen_artist_cache.py
 
 # run the matcher
-./matcher.py
+echo "Now, go manually clean up schedule.txt and schedule-off-venue.txt"
+echo "then run ./matcher.py !"
